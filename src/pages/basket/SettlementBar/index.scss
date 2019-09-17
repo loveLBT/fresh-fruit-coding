@@ -1,0 +1,48 @@
+@import '../../../styles/mixin.scss';
+
+.settlement-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: $bg-color-base;
+  .radio {
+    transform: scale(0.8);
+    color: $dark2-color;
+  }
+  .settlement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .count-label {
+      font-size: 24px;
+      color: $dark2-color;
+    }
+    .count-value {
+      font-size: 24px;
+      color: #e64e19;
+    }
+    .btn {
+      width: 120px;
+      height: 56px;
+      border-radius: 28px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #ff9717, #ff5d03);
+      margin-left: 30px;
+      .txt {
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+  }
+}

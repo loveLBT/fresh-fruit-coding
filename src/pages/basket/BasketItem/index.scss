@@ -1,0 +1,51 @@
+@import '@styles/theme.scss';
+
+.basket-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  .radio {
+    align-self: center;
+  }  
+  .img {
+    width: 165px;
+    height: 175px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $bg-base-color;
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .info {
+    width: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .name {
+      color: $text-color-dark2;
+      font-size: 24px;
+    }
+    .price {
+      display: flex;
+      flex-direction: row;
+      .price1 {
+        font-size: 24px;
+        color: #e64e19;
+      }
+      .price2 {
+        font-size: 20px;
+        color: $text-color-light;
+        margin-left: 4px;
+        text-decoration:line-through;
+      }
+    }
+  }
+  .asinput {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
