@@ -3,7 +3,7 @@ import { View, Text, Image } from '@tarojs/components'
 
 import './index.scss'
 
-const basket = require('./images/basket.png')
+const basket = require('@images/icon/basket.png')
 
 class FruitItem extends Component {
   static defaultProps = {

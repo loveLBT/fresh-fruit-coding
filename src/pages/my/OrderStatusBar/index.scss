@@ -1,0 +1,53 @@
+@import '@styles/theme.scss';
+.order-status-bar {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 30px;
+  .title {
+    padding-top: 30px;
+    font-size: $text-size-4;
+    color: $text-color-dark2;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img {
+      position: relative;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      .tag {
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        border: 1px solid $primary-color;
+        top: -5px;
+        right: -5px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #fff;
+        .value {
+          color: $primary-color;
+          font-size: $text-size-1;
+        }
+      }
+    }
+    .txt {
+      font-size: $text-size-2;
+      color: $text-color-light;
+      margin-top: 20px;
+    }
+  }
+}

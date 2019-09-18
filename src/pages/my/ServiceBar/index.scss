@@ -1,0 +1,67 @@
+@import '@styles/theme.scss';
+.service-bar {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  .title {
+    padding-top: 30px;
+    font-size: $text-size-4;
+    color: $text-color-dark2;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    &:nth-child(-n + 4) {
+      margin-top: 0;
+    }
+    .img-container {
+      width: 68px;
+      height: 68px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .img {
+
+      }
+      .icon-start {
+        width: 46px;
+        height: 44px;
+      }
+      .icon-position {
+        width: 40px;
+        height: 46px
+      }
+      .icon-about {
+        width: 47px;
+        height: 47px;
+      }
+      .icon-delivery {
+        width: 62px;
+        height: 45px;
+      }
+      .icon-question {
+        width: 47px;
+        height: 47px;
+      }
+      .icon-setting {
+        width: 47px;
+        height: 47px;
+      }
+    }
+    .txt {
+      font-size: 24px;
+      color: $text-color-light;
+    }
+  }
+}

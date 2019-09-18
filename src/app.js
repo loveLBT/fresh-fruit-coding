@@ -14,8 +14,14 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/search/index',
       'pages/index/index',
       'pages/basket/index',
+      'pages/my/index',
+      'pages/order/index',
+      'pages/AddAddress/index',
+      'pages/accountManage/index',
+      'pages/message/index',
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -34,6 +40,11 @@ class App extends Component {
         text: '果篮',
         iconPath: './images/icon/tab_basket.png',
         selectedIconPath: './images/icon/tab_basket_active.png'
+      },{
+        pagePath: 'pages/my/index',
+        text: '我的',
+        iconPath: './images/icon/tab_account.png',
+        selectedIconPath: './images/icon/tab_account_active.png'
       }]
     }
   }

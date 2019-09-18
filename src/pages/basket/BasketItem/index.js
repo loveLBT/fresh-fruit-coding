@@ -1,13 +1,14 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Radio, Image  } from '@tarojs/components'
+import { View, Text, Image  } from '@tarojs/components'
 import { AtSwipeAction } from "taro-ui"
 
+import RadioBar from '@components/RadioBar'
 import ASInput from '@components/ASInput'
 import './index.scss'
 
 class BasketItem extends Component {
   onRemove = () => {
-    console.log("aaa")
+    
   }
   render() {
     const { img, title, vipPrice, price } = this.props
@@ -26,7 +27,7 @@ class BasketItem extends Component {
         ]}
       >
         <View className='basket-item'>
-          <Radio className='radio' color='#00e072' />
+          <RadioBar />
           <Image className='img' src={img} />
           <View className='info'>
             <Text className='name'>{title}</Text>

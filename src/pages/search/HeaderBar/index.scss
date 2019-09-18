@@ -1,0 +1,18 @@
+@import '@styles/theme.scss';
+
+.header-bar {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  .empty {
+    height: 40px;
+    background-color: $primary-color;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,35 @@
+@import '@styles/theme.scss';
+
+.message-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 20px;
+  .title {
+    padding: 20px 30px;
+    border-bottom: 1px solid $border-color;
+    .txt {
+      font-size: $text-size-4;
+      color: $text-color-dark2;
+    }
+  }
+  .content {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .txt {
+      flex: 1;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: $text-size-2;
+      color: $text-color-light;
+      padding-right: 30px;
+    }
+    .img {
+      width: 34px;
+      height: 34px;
+      background-color: red;
+    }
+  }
+}

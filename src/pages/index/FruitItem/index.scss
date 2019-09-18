@@ -22,18 +22,18 @@
       align-items: center;
       margin-bottom: 15px;
       .price1 {
-        font-size: 24px;
+        font-size: $text-size-2;
         color: #e64e19;
       }
       .price2 {
-        font-size: 20px;
+        font-size: $text-size-2;
         color: $text-color-light;
         margin-left: 4px;
         text-decoration:line-through;
       }
       .basket {
-        width: 34px;
-        height: 34px;
+        width: 40px;
+        height: 40px;
         margin-left: 20px;
       }
     }

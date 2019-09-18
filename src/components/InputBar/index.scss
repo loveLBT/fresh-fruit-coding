@@ -1,0 +1,22 @@
+.input-bar {
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px;
+  background: #fff;
+  box-sizing: border-box;
+  .label{
+    font-size: 24px;
+    color: #333;
+    margin-right: 30px;
+  }
+  .input {
+    flex: 1;
+    font-size: 24px;
+    color: #666;
+  }
+}
+.border {
+  border-bottom: 1px solid #e5e5e5;
+}

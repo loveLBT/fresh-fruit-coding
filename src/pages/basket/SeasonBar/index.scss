@@ -1,14 +1,14 @@
-@import '../../../styles/mixin.scss';
+@import '@styles/theme.scss';
 
 .season-bar {
   display: flex;
   flex-direction: column;
-  background-color: $bg-color;
+  background-color: #fff;
   padding: 30px 0;
   .title {
     text-align: center;
-    font-size: 28px;
-    color: $dark2-color;
-    margin-bottom: 32px;
+    font-size: $text-size-5;
+    color: $text-color-dark2;
+    margin-bottom: 30px;
   }
 }

@@ -1,0 +1,19 @@
+.textarea-bar {
+  min-height: 66px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px;
+  background: #fff;
+  .label{
+    font-size: 24px;
+    color: #333;
+    margin-right: 30px;
+    line-height: 66px;
+  }
+  .textarea {
+    flex: 1;
+    font-size: 24px;
+    color: #666;
+    align-self: center;
+  }
+}

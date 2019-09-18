@@ -1,0 +1,27 @@
+@import '@styles/theme.scss';
+.vip-bar {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 30px;
+  .title {
+    padding-top: 30px;
+    font-size: $text-size-4;
+    color: $text-color-dark2;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 30px 0;
+    .img {
+      width: 243px;
+      height: 152px;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

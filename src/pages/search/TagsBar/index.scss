@@ -1,0 +1,18 @@
+@import '@styles/theme.scss';
+
+.tags-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  .title {
+    font-size: $text-size-4;
+    color: $text-color-dark2;
+    padding-top: 10px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+}

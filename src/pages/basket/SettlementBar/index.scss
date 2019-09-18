@@ -1,4 +1,4 @@
-@import '../../../styles/mixin.scss';
+@import '@styles/theme.scss';
 
 .settlement-bar {
   display: flex;
@@ -12,27 +12,23 @@
   left: 0;
   right: 0;
   height: 80px;
-  background-color: $bg-color-base;
-  .radio {
-    transform: scale(0.8);
-    color: $dark2-color;
-  }
+  background-color: $bg-base-color;
   .settlement {
     display: flex;
     flex-direction: row;
     align-items: center;
     .count-label {
-      font-size: 24px;
-      color: $dark2-color;
+      font-size: $text-size-2;
+      color: $text-color-dark2;
     }
     .count-value {
-      font-size: 24px;
+      font-size: $text-size-2;
       color: #e64e19;
     }
     .btn {
       width: 120px;
       height: 56px;
-      border-radius: 28px;
+      border-radius: $text-size-4;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -40,7 +36,7 @@
       background: linear-gradient(to right, #ff9717, #ff5d03);
       margin-left: 30px;
       .txt {
-        font-size: 24px;
+        font-size: $text-size-2;
         color: #fff;
       }
     }

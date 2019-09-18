@@ -1,14 +1,14 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 
-import theme from '../../../constants/theme'
+import RadioBar from '@components/RadioBar'
 import './index.scss'
 
 class SettlementBar extends Component {
   render() {
     return (
       <View className='settlement-bar'>
-        <Radio color={theme.primaryColor} className='radio' >全选</Radio>
+        <RadioBar>全选</RadioBar>
         <View className='settlement'>
           <Text className='count-label'>合计：</Text>
           <Text className='count-value'>￥0</Text>

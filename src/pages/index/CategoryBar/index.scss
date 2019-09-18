@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 30px 15px 30px; 
+  padding: 0 30px 15px 30px; 
+  background-color: #fff;
   .item {
     height: 130px;
     width: 50%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,6 +18,9 @@
     &:nth-child(2n+1) {
       border-right: 1px solid $border-color;
     }
+    &:nth-child(2n+2) {
+      padding-left: 20px;
+    }
     &:nth-child(-n+2) {
       border-top: 0;
     }
@@ -25,17 +28,17 @@
       display: flex;
       flex-direction: column;
       .title {
-        font-size: 28px;
+        font-size: $text-size-5;
         margin-bottom: 15px;
       }
       .desc {
-        font-size: 20px;
+        font-size: $text-size-1;
         color: $text-color-light;
       }
     }
     .right {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
       .img {
         width: 100%;
         height: 100%;

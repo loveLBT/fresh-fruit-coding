@@ -1,0 +1,29 @@
+.radio-group-bar {
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px;
+  background: #fff;
+  box-sizing: border-box;
+  .label{
+    font-size: 24px;
+    color: #333;
+    margin-right: 30px;
+    line-height: 66px;
+  }
+  .group {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .radio {
+      transform: scale(0.8);
+      font-size: 30px;
+      color: #666;
+      margin-right: 30px;
+    }
+  }
+}
+.border {
+  border-bottom: 1px solid #e5e5e5;
+}
