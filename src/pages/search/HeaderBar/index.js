@@ -9,11 +9,8 @@ class HeaderBar extends Component {
   render() {
     return (
       <View className='header-bar'>
-        <View className='empty'></View>
-        <View className='wrapper'>
-          <AtIcon value='chevron-left'></AtIcon>
-          <SearchInput />
-        </View>
+        <AtIcon value='chevron-left'></AtIcon>
+        <SearchInput />
       </View>
     )
   }

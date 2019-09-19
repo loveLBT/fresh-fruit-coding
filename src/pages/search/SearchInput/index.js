@@ -3,7 +3,7 @@ import { View, Image, Input } from '@tarojs/components'
 
 import './index.scss'
 
-const searchIcon = require('@styles/icon/search.png')
+const searchIcon = require('@images/icon/search.png')
 
 class SearchInput extends Component {
   render() {
