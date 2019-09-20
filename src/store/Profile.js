@@ -14,17 +14,16 @@ export default class Profile {
 	 * @return {[type]} [description]
 	 */
 	@action getSystemInfo = () => {
-		const systemInfo = Taro.getStorageSync(this.STORAGE_KEY_SYSTEM_INFO)
-		console.log(systemInfo)
-		if(systemInfo) {
-			this.systemInfo = systemInfo
-		}else {
+		let systemInfo = Taro.getStorageSync(this.STORAGE_KEY_SYSTEM_INFO)
+		if(!systemInfo) {
 			Taro.getSystemInfo({
 				success: (res) => {
-					this.systemInfo = res
+					systemInfo = res
 					Taro.setStorageSync(this.STORAGE_KEY_SYSTEM_INFO, res)
 				}
 			})
 		}
+		console.log(systemInfo)
+		this.systemInfo = systemInfo
 	}
 }

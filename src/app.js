@@ -22,6 +22,7 @@ class App extends Component {
       'pages/AddAddress/index',
       'pages/accountManage/index',
       'pages/message/index',
+      
     ],
     window: {
       backgroundTextStyle: 'light',

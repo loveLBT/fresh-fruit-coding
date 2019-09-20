@@ -1,0 +1,35 @@
+@import '@styles/theme.scss';
+
+.nav-bar {
+	position: relative;
+  background: transparent;
+  .bar {
+    box-sizing: content-box;
+  	position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: $navigation-height;
+    z-index: 1;
+  }
+  .placeholder {
+    display: block;
+    height: $navigation-height;
+    background: transparent;
+  }
+}
+
+/* 
+*******************Tip********************************
+要解决我们先前提到的问题当开启小程序下拉刷新时，如何让顶部导航不会跟着下拉？
+仅仅只需设置.bar样式为position: fixed，
+这样当我们下拉刷新时导航栏就不会跟着动了。
+
+那为什么我们还需要.placeholder标签呢？
+如果你尝试着去掉它，并且运行查看效果时，你会发现，页面的内容会被顶部导航栏遮挡了，
+我们需要对每个页面进行额外的设置以使它如预期一样显示，比如给每个页面设置顶部padding，
+这样的消耗太大，因此我们专门设置placeholder标签占据与导航栏相同的高度，使页面不被遮挡，且无需额外处理。 */

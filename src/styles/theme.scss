@@ -12,11 +12,22 @@ $border-color: #e5e5e5;
 $color-brand: $primary-color;
 $color-brand-light: #40e895;
 $color-brand-dark: #00b35b;
-
+/*Base Text Size */
 $text-size-1: 22px;
 $text-size-2: 24px;
 $text-size-3: 26px;
 $text-size-4: 28px;
 $text-size-5: 30px;
 $text-size-6: 32px;
+
+/*Capsule Config */
+$capsule-padding: 6PX; // 胶囊的上下padding距离
+$capsule-height: 32PX; // 胶囊的高度
+$capsule-width: 88PX; // 胶囊的宽度
+
+/*NavBar Config */
+$navigation-height: $capsule-padding * 2 + $capsule-height;
+$navigation-font-size: 15PX;
+$navigation-icon-font-size: 25PX;
+$navigation-box-shadow: 0 2PX 2PX #222;
 
