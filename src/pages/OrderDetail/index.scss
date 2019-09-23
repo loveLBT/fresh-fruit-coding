@@ -1,0 +1,22 @@
+.order-detail {
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+	.number {
+		margin-bottom: 15px;
+	}
+	.info-1 {
+		padding: 0 30px;
+		background-color: #fff;
+		margin-bottom: 15px;
+	}
+	.info-2 {
+		padding: 0 30px;
+		background-color: #fff;
+		margin-bottom: 15px;
+	}
+	.info-3 {
+		padding: 0 30px;
+		background-color: #fff;
+	}
+}

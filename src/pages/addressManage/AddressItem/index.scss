@@ -1,6 +1,6 @@
 @import '@styles/theme.scss';
 
-.default-address {
+.address-item {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,19 +16,21 @@
       flex-direction: row;
       align-items: center;
       margin-bottom: 10px;
+      .tag {
+        margin-right: 10px;
+      }
       .name {
-        font-size: $text-size-2;
+        font-size: $text-size-3;
         color: $text-color-dark2;
         margin-right: 10px;
-        margin-left: 10px;
       }
       .phone {
-        font-size: $text-size-1;
+        font-size: $text-size-2;
         color: $text-color-light;
       }
     }
     .address {
-      font-size: $text-size-2;
+      font-size: $text-size-3;
       color: $text-color-light;
     }
   }

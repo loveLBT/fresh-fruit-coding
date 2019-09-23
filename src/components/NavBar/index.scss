@@ -17,6 +17,7 @@
     z-index: 1;
   }
   .placeholder {
+    box-sizing: content-box;
     display: block;
     height: $navigation-height;
     background: transparent;

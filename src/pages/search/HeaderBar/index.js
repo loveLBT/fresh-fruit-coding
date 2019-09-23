@@ -1,26 +1,30 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Image } from '@tarojs/components'
+import { View, Image, Input } from '@tarojs/components'
 import { AtIcon } from 'taro-ui'
 import classnames from  'classnames'
 
 import NavBar from '@components/NavBar'
-import SearchInput from '../SearchInput'
 import './index.scss'
 
-class HeaderBar extends Component {	
-  static defaultProps = {
-    systemInfo: {}  
-  }
-  
+const searchIcon = require('@images/icon/search.png')
+
+class HeaderBar extends Component {	  
   render() {
-    const { systemInfo } = this.props
 
     return (
       <NavBar
-        statusBarHeight ={systemInfo.statusBarHeight}
+        backgroundColor='#f5f5f5'
       >
         <View className='header-bar'>
-          <SearchInput />
+          <AtIcon value='chevron-left'></AtIcon>
+          <View className='search'>
+            <Image className='icon' src={searchIcon} />
+            <Input 
+              className='input' 
+              placeholder='搜索商品'
+              placeholderClass='placeholderClass'
+            />
+          </View>
         </View>
       </NavBar>
     )

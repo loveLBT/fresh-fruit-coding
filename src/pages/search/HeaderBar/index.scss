@@ -1,5 +1,10 @@
 @import '@styles/theme.scss';
 
+$search-bg: #eaeaea;
+$search-margin-right: $capsule-width + $capsule-padding * 2;
+$search-height: $navigation-height - 18;
+$search-text-color: #666;
+
 .header-bar {
  	position: relative;
   display: flex;
@@ -7,5 +12,33 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  .back{
+  	margin-left: 40px;
+  }
+  .search {
+	  flex: 1;
+	  height: $search-height;
+	  border-radius: $search-height;
+	  padding-left: $search-height / 4;
+	  padding-right: $search-height / 4;
+	  margin-right: $search-margin-right + $search-height / 4;
+	  margin-left: $search-height / 4;
+	  box-sizing: border-box;
+	  background-color: $search-bg;
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  .icon {
+	    width: 20PX;
+	    height: 20PX;
+	  }
+	  .input {
+	    font-size: 13PX;
+	    color: $search-text-color;
+	    .placeholderClass {
+	      font-size: 13PX;
+	      color: $placehoder-color;
+	    }
+	  }
+	}
 }

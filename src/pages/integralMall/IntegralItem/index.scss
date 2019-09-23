@@ -1,0 +1,47 @@
+@import '@styles/theme.scss';
+
+.integral-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.img {
+    width: 216px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $bg-base-color;
+    margin-bottom: 15px;
+  }
+  .title {
+		font-size: $text-size-2;
+		color: $text-color-light;
+		margin-bottom: 15px;
+  }
+  .integral {
+  	font-size: $text-size-2;
+		color: #fedd42;
+		margin-bottom: 15px;
+  }
+  .exchange-btn {
+  	width: 142px;
+  	height: 52px;
+  	border-radius: 30px;
+  	background: #ededed;
+  	margin-bottom: 15px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	.txt {
+  		font-size: $text-size-4;
+  		color: $text-color-light;
+  		line-height: $text-size-4;
+  	}
+  	&.isExchange {
+  		background: linear-gradient(to right, #fce855 , #ffd126);
+  		.txt {
+  			color: #fff;
+  		}
+  	}
+  }
+}

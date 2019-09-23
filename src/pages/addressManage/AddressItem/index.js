@@ -7,12 +7,25 @@ import './index.scss'
 const arrow_right = require('@images/icon/arrow_right.png')
 
 class DefaultAddress extends Component {
+  static defaultProps = {
+    isDefault: false,
+    selected: false,
+    edit: false  
+  }
+  
   render() {
+    const { isDefault, selected, edit } = this.props
+
     return (
-      <View className='default-address'>
+      <View className='address-item'>
         <View className='info'>
           <View className='user'>
-            <Tag type='primary' size='small' name='默认' />
+            {isDefault && 
+              <View className='tag'>
+                <Tag type='primary' size='small' name='默认' />
+              </View>
+            }
+            
             <Text className='name'>李步挺</Text>
             <Text className='phone'>13575407573</Text>
           </View>
@@ -20,7 +33,9 @@ class DefaultAddress extends Component {
             浙江省温州市苍南县桥墩镇玉松路15号
           </Text>
         </View>
-        <Image className='icon' src={arrow_right} />
+        {selected && 
+          <Image className='icon' src={arrow_right} />
+        }
       </View>
     )
   }

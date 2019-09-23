@@ -5,16 +5,40 @@ import Tag from '@components/Tag'
 import './index.scss'
 
 class TagsBar extends Component {
+  static defaultProps = {
+    title: '',
+    tags: [], 
+    clearText: ''
+  }
+  
   render() {
-    const { title } = this.props
+    const { title, tags, clearText } = this.props
 
     return (
       <View className='tags-bar'>
-        <Text className='title'>{title}</Text>
+        <View className='title'>
+          <Text className='txt'>{title}</Text>
+          {clearText && 
+            <Text 
+              className='clear'
+              onClick={this.props.onClear}
+            >
+              {clearText}
+            </Text>
+          }
+          
+        </View>
+        
         <View className='wrapper'>
-          <Tag name='葡萄' />
-          <Tag name='桃子' />
-          <Tag name='泰国香蕉' />
+          <View className='tag'>
+            <Tag my-class='tag' size='small' name='葡萄' />
+          </View>
+          <View className='tag'>
+            <Tag my-class='tag' size='small' name='桃子' />
+          </View>
+          <View className='tag'>
+            <Tag my-class='tag' size='small' name='泰国香蕉' />
+          </View>
         </View>
       </View>
     )

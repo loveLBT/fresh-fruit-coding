@@ -14,15 +14,19 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/search/index',
+      'pages/OrderDetail/index',
+      'pages/order/index',
       'pages/index/index',
       'pages/basket/index',
       'pages/my/index',
-      'pages/order/index',
-      'pages/AddAddress/index',
+      'pages/addAddress/index',
       'pages/accountManage/index',
       'pages/message/index',
-      
+      'pages/search/index',
+      'pages/coupon/index',
+      'pages/addressManage/index',
+      'pages/result/Success',
+      'pages/integralMall/index',
     ],
     window: {
       backgroundTextStyle: 'light',
