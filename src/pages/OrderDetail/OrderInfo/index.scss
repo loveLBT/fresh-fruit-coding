@@ -1,0 +1,18 @@
+@import '@styles/theme.scss';
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  .row {
+    display: flex;
+    flex-direction: row;
+    height: 66px;
+    align-items: center;
+    padding: 0 30px;
+    .txt {
+      font-size: $text-size-2;
+      color: $text-color-dark2;
+    }
+  }
+}

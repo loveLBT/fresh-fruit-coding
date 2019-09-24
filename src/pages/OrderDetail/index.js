@@ -1,9 +1,11 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+import { View, Text, Button } from '@tarojs/components'
+import { AtButton } from 'taro-ui'
 
 import AddressItem from '../addressManage/AddressItem'
 import FruieItem from '../order/FruitItem'
-import InfoBar from '../order/InfoBar'
+import FruitInfo from './FruitInfo'
+import OrderInfo	from './OrderInfo'
 import './index.scss'
 
 class OrderDetail extends Component {
@@ -21,15 +23,23 @@ class OrderDetail extends Component {
 					<AddressItem 
 						isDefault={true}
 					/>
-					<FruieItem />
-					<FruieItem />
+					<View className='fruit-list'>
+						<FruieItem />
+						<FruieItem />
+					</View>
+					<View className='fruit-count'>
+						<Text className='txt'>共2件商品</Text>
+					</View>
 				</View>
 
 				<View className='info-2'>
-					<InfoBar />
+					<FruitInfo />
 				</View>
 				<View className='info-3'>
-					
+					<OrderInfo />
+				</View>
+				<View className='actions'>
+					<AtButton full={true} className='action remove'>删除</AtButton>
 				</View>
 			</View>
 		)

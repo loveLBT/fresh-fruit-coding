@@ -1,0 +1,70 @@
+@import '@styles/theme.scss';
+
+.order-item {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin-bottom: 15px;
+	.number {
+		padding: 0 30px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		height: 66px;
+		.txt {
+			color: $text-color-dark2;
+			font-size: $text-size-2;
+		}
+		.status {
+			color: $primary-color;
+			font-size: $text-size-2;
+		}
+	}
+	.fruit-list {
+		padding: 0 30px;
+	}
+	.order-info {
+		padding: 20px 30px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		border-top: 1px solid $border-color;
+		.time {
+			font-size: $text-size-2;
+			color: $text-color-light;
+		}
+		.count {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.label {
+				font-size: $text-size-2;
+				color: $text-color-dark2;
+				margin-right: 15px;
+				&:nth-child(2) {
+					margin-right: 0px;
+				}
+			}
+			.value {
+				font-size: $text-size-3;
+				color: $text-color-dark;
+			}
+		}
+	}
+	.actions {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 20px 30px;
+		border-top: 1px solid $border-color;
+		.tag {
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

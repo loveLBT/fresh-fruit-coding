@@ -1,22 +1,78 @@
+@import "@styles/theme.scss";
+
 .order-detail {
 	display: flex;
 	flex-direction: column;
-	padding-top: 15px;
+	padding-bottom: 90px;
 	.number {
 		margin-bottom: 15px;
-	}
-	.info-1 {
+		height: 66px;
 		padding: 0 30px;
 		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.txt {
+			color: $text-color-dark2;
+			font-size: $text-size-2;
+		}
+		.status {
+			color: $primary-color;
+			font-size: $text-size-2;
+		}
+	}
+	.info-1 {
+		background-color: #fff;
 		margin-bottom: 15px;
+		.fruit-list {
+			padding: 0 30px;
+		}
+		.fruit-count {
+			border-top: 1px solid $border-color;
+			height: 66px;
+			padding: 0 30px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			.txt {
+				font-size: $text-size-2;
+				color: $text-color-dark2
+			}
+		}
 	}
 	.info-2 {
-		padding: 0 30px;
 		background-color: #fff;
 		margin-bottom: 15px;
 	}
 	.info-3 {
-		padding: 0 30px;
 		background-color: #fff;
+	}
+	.actions {
+		position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+		height: 80px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		background-color: #fff;
+		border-top: 1px solid $border-color;
+		.action {
+			align-self: stretch;
+			width: 158px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			font-size: $text-size-3;
+			height: 80px;
+			&.remove {
+				color: #fff;
+				background-color: $danger-color;
+			}
+		}
 	}
 }
