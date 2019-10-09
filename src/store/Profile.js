@@ -23,7 +23,18 @@ export default class Profile {
 				}
 			})
 		}
-		console.log(systemInfo)
 		this.systemInfo = systemInfo
+	}
+	@action getLocation = () => {
+		Taro.getLocation({
+			type: 'gcj02',
+			altitude: true,
+			success: (res) => {
+				console.log(res)
+			},
+			fail: (err) => {
+				console.log(err)
+			}
+		})
 	}
 }

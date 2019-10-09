@@ -15,6 +15,7 @@ class SwiperBar extends Component {
 	        circular
 	        indicatorDots
 	        autoplay
+	        style={{height: '100PX'}}
 	      >
 	        <SwiperItem key={1}>
 	        	<Image className='img' src={banner} />

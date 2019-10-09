@@ -1,0 +1,63 @@
+@import '@styles/theme.scss';
+
+$search-bg: #fff;
+$bar-height: $navigation-height + 6PX;
+$search-height: $capsule-height;
+
+.search-bar {
+  position: relative;
+  background: transparent;
+  .bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: $bar-height;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 0 30px;
+    .address {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .txt {
+        font-size: 14PX;
+        color: #f5f5f5;
+      }
+    }
+    .search {
+      flex: 1;
+      height: $search-height;
+      border-radius: $search-height;
+      padding-left: $search-height / 4;
+      padding-right: $search-height / 4;
+      box-sizing: border-box;
+      background-color: $search-bg;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 30px;
+      .icon {
+        width: 22PX;
+        height: 22PX;
+      }
+      .txt {
+        font-size: 12PX;
+        color: $placehoder-color;
+        margin-left: 4PX;
+      }
+    }
+    .msgIcon {
+      width: 18PX;
+      height: 18PX;
+    }
+  }
+  .placeholder {
+    display: block;
+    padding: 15px 0;
+    height: $bar-height;
+  }
+}

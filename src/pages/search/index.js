@@ -13,6 +13,7 @@ class Search extends Component {
   render() {    
     return (
       <View className='page search'>
+        <HeaderBar />
         <TagsBar 
           title='历史搜素'
           clearText='清楚历史记录'

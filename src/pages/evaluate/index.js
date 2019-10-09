@@ -7,6 +7,9 @@ import FruitItem from '../order/FruitItem'
 import './index.scss'
 
 class Evaluate extends Component {
+	config = {
+    navigationBarTitleText: '发布评价'
+  }
 	render() {
 		return (
 			<View className='page evaluate'>

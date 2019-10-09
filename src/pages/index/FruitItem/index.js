@@ -3,7 +3,7 @@ import { View, Text, Image } from '@tarojs/components'
 
 import './index.scss'
 
-const basket = require('@images/icon/basket.png')
+const basketIcon = require('@images/icon/basket.png')
 
 class FruitItem extends Component {
   static defaultProps = {
@@ -20,9 +20,11 @@ class FruitItem extends Component {
         <Image className='img' src={img} />
         <Text className='name'>{title}</Text>
         <View className='info'>
-          <Text className='price1'>￥{vipPrice}</Text>
-          <Text className='price2'>￥{price}</Text>
-          <Image className='basket' src={basket} />
+          <View className='price'>
+            <Text className='original'>￥{vipPrice}</Text>
+            <Text className='scal'>￥{price}</Text>
+          </View>
+          <Image className='basket' src={basketIcon} />
         </View>
       </View>
     )

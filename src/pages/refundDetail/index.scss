@@ -1,0 +1,61 @@
+@import '@styles/theme.scss';
+
+.refundDetail {
+	display: flex;
+	flex-direction: column;
+	.number {
+		padding: 0 30px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		height: 66px;
+		margin-bottom: 15px;
+		background-color: #fff;
+		.txt {
+			color: $text-color-dark2;
+			font-size: $text-size-2;
+		}
+		.status {
+			color: $primary-color;
+			font-size: $text-size-2;
+		}
+	}
+	.fruit-info {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		margin-bottom: 15px;
+		.title {
+			display: flex;
+			align-items: center;
+			height: 66px;
+			padding: 0 30px;
+			background-color: #fff;
+			.txt {
+				color: $text-color-dark2;
+				font-size: $text-size-2;
+			}
+		}
+		.fruit-list {
+			padding: 0 30px;
+			background-color: #fff;
+		}
+	}
+	.refund-info {
+		display: flex;
+	  flex-direction: column;
+	  background-color: #fff;
+	  .row {
+	    display: flex;
+	    flex-direction: row;
+	    height: 66px;
+	    align-items: center;
+	    padding: 0 30px;
+	    .txt {
+	      font-size: $text-size-2;
+	      color: $text-color-dark2;
+	    }
+	  }
+	}
+}

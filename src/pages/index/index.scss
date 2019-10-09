@@ -1,0 +1,17 @@
+@import '@styles/theme.scss';
+
+$bar-height: $navigation-height + 6PX;
+
+.index {
+	background-color: #fff;
+	.bar {
+		position: relative;
+		background-color: $primary-color;
+		box-sizing: content-box;
+		height: 130PX;
+		margin-bottom: 100PX + $navigation-height + 6PX - 130PX;
+		.swiperBar {
+			padding: 0 30px;
+		}
+	}
+}

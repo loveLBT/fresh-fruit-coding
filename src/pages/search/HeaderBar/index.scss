@@ -2,8 +2,7 @@
 
 $search-bg: #eaeaea;
 $search-margin-right: $capsule-width + $capsule-padding * 2;
-$search-height: $navigation-height - 18;
-$search-text-color: #666;
+$search-height: $capsule-height;
 
 .header-bar {
  	position: relative;
@@ -12,9 +11,6 @@ $search-text-color: #666;
   align-items: center;
   width: 100%;
   height: 100%;
-  .back{
-  	margin-left: 40px;
-  }
   .search {
 	  flex: 1;
 	  height: $search-height;
@@ -29,14 +25,15 @@ $search-text-color: #666;
 	  flex-direction: row;
 	  align-items: center;
 	  .icon {
-	    width: 20PX;
-	    height: 20PX;
+	    width: 18PX;
+	    height: 18PX;
 	  }
 	  .input {
-	    font-size: 13PX;
-	    color: $search-text-color;
+	    font-size: 12PX;
+	    color: $text-color-dark;
+	    margin-left: 4PX;
 	    .placeholderClass {
-	      font-size: 13PX;
+	      font-size: 12PX;
 	      color: $placehoder-color;
 	    }
 	  }

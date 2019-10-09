@@ -14,21 +14,22 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/evaluate/index',
-      'pages/myOrder/index',
-      'pages/orderDetail/index',
-      'pages/order/index',
       'pages/index/index',
       'pages/basket/index',
       'pages/my/index',
       'pages/addAddress/index',
       'pages/accountManage/index',
-      'pages/message/index',
       'pages/search/index',
+      'pages/message/index', 
       'pages/coupon/index',
       'pages/addressManage/index',
       'pages/result/Success',
       'pages/integralMall/index',
+      'pages/refundDetail/index',
+      'pages/evaluate/index',
+      'pages/myOrder/index',
+      'pages/orderDetail/index',
+      'pages/order/index'
     ],
     window: {
       backgroundTextStyle: 'light',

@@ -15,6 +15,7 @@ class NavBar extends Component {
 
 	render() {
 		const { statusBarHeight, backgroundColor, color } = this.props
+
 		const barStyle = {
 			paddingTop: `${statusBarHeight}PX`,
 			background: backgroundColor,
