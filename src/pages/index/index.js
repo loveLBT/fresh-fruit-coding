@@ -1,32 +1,40 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { observer } from 'mobx-react'
+import { observer, inject } from '@tarojs/mobx'
 
 import SwiperBar from './SwiperBar'
 import CategoryBar from './CategoryBar'
 import FruitList from './FruitList'
 import SearchBar from './SearchBar/'
-import store from '@store'
 
 import './index.scss'
 
-const { profileStore } = store
-
+@inject('profileStore', 'homeStore')
+@observer
 class Index extends Component {
 	config = {
     enablePullDownRefresh: true
   }
+  componentDidMount () {
+    const { homeStore } = this.props
+    homeStore.initData()
+  }
   render () {
+    const { profileStore, homeStore } = this.props
+    const { locationInfo } = profileStore
+
     return (
       <View className='page index'>
         <View className='bar'>
-        	<SearchBar />
+        	<SearchBar 
+            location={locationInfo.district}
+          />
         	<View className='swiperBar/'>
-        		<SwiperBar />
+        		<SwiperBar data={homeStore.swiperList} />
         	</View>
         </View>
-       <CategoryBar />
-       <FruitList />
+       <CategoryBar data={homeStore.categoryList} />
+       <FruitList data={homeStore.fruitList} />
       </View>
     )
   }

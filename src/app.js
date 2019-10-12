@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
+import '@tarojs/async-await'
 
 import store from './store'
 import './styles/base.scss'
@@ -54,6 +55,11 @@ class App extends Component {
         iconPath: './images/icon/tab_account.png',
         selectedIconPath: './images/icon/tab_account_active.png'
       }]
+    },
+    permission: {
+      'scope.userLocation': {
+        desc: '你的位置信息将用于展示你周边的产品'
+      }
     }
   }
 

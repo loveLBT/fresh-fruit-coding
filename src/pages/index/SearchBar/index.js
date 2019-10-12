@@ -8,11 +8,13 @@ const msgIcon = require('@images/icon/message.png')
 
 class SearchBar extends Component {
 	render() {
+		const { location } = this.props
+
 		return (
 			<View className='search-bar'>
 				<View className='bar'>
 					<View className='address'>
-						<Text className='txt'>苍南</Text>
+						<Text className='txt'>{location}</Text>
 					</View>
 					<View className='search'>
 						 <Image className='icon' src={searchIcon} />
